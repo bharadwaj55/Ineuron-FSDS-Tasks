@@ -201,17 +201,17 @@ class login:
             self.username = username
             self.student_name = student_name
             self.batch = batch
-            __fee = 17000
-            print("fee for student is:",login.__fee)
+            self.fee = 17000
+            print("fee for student is:",self.fee)
         except Exception as e:
             logging.exception(e)
 
     def admin_login2(self, username, new_value):
-        logging.info("Admin 2 logged in")
+        # logging.info("Admin 2 logged in")
         self.username = username
         try:
-            self.__fee = new_value
+            self.fee = new_value
             logging.info("Discounted Fees updated by Admin 2")
-            print("Updated fee for student is:",login.__fee)
+            print("Updated fee for student is:",self.fee)
         except Exception as e:
             logging.exception(e)
