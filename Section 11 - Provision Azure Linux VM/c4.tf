@@ -25,5 +25,5 @@ resource "azurerm_linux_virtual_machine" "mylinuxvm" {
     sku       = "86-gen2"
     version   = "latest"
   }
-  ustom_data = filebase64("${path.module}/app-scripts/cloud-init-jenkins.txt")
+  custom_data = filebase64("${path.module}/app-scripts/cloud-init-jenkins.txt")
 }
