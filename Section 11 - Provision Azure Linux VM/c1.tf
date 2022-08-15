@@ -25,3 +25,4 @@ resource "random_string" "myrandom" {
   numeric = true
 
 }
+
