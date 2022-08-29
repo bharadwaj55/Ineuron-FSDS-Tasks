@@ -1,0 +1,8 @@
+- Introduced in Terraform v0.14 and later.
+- This basically can avoid outages due to version mismatches.
+
+- Terraform remembers the version selected by storing in a dependency lock file. 
+- Lock file currently tracks only the provider dependencies.
+
+- If Terraform didnt find a lock file, it would download the latest provider versions.
+- If you have lock file, lock file causes the Terraform to always to install the same provider version.

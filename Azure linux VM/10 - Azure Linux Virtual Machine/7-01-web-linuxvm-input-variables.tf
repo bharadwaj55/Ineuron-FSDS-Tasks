@@ -1,0 +1,2 @@
+
+# Linux VM input variables 

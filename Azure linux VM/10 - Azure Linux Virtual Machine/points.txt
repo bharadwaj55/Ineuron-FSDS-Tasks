@@ -1,0 +1,5 @@
+
+In the web-nsg, you have associated it with the web-subnet
+
+Similarly, VM-nsg need to associated with public IP and web-subnet NIC 
+For that, we need to have Subnet+NSG association resource
